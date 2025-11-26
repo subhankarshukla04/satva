@@ -136,13 +136,17 @@ p {
 }
 
 .welcome-logo {
-    max-width: 400px;
-    width: 80vw;
-    height: auto;
-    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
-    animation: logoFadeIn 1.2s ease-out;
+  max-width: 240px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  display: block;
+  margin: 0 auto;
+  animation: logoFadeIn 1.2s ease-out;
 }
-
 .welcome-title {
     font-size: 3.5rem;
     font-weight: 800;
