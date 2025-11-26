@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSRD Resources & Guides | Satva Sustainability</title>
+    <meta name="description" content="Free CSRD compliance resources, guides, and expert insights for mid-market companies. Learn about sustainability reporting and ESG requirements.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Enhanced CSS -->
+    <link rel="stylesheet" href="css/enhanced-styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="main-nav" class="nav-sticky">
+        <div class="container nav-content">
+            <a href="index-enhanced.html" class="logo">
+                <img src="images/satva-logo.png" alt="Satva" class="logo-image">
+                <div class="logo-text-container">
+                    <span class="logo-text">SATVA</span>
+                    <span class="logo-tagline">शिव संकल्पमस्तु</span>
+                </div>
+            </a>
+
+            <div class="nav-links">
+                <a href="index-enhanced.html">Home</a>
+                <a href="services-enhanced.html">Services</a>
+                <a href="about-enhanced.html">About</a>
+                <a href="resources-enhanced.html" class="active">Resources</a>
+                <a href="contact-enhanced.html">Contact</a>
+                <button class="btn-primary" onclick="openModal('assessment')">Free Assessment</button>
+            </div>
+
+            <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="index-enhanced.html">Home</a>
+            <a href="services-enhanced.html">Services</a>
+            <a href="about-enhanced.html">About</a>
+            <a href="resources-enhanced.html" class="active">Resources</a>
+            <a href="contact-enhanced.html">Contact</a>
+            <button class="btn-primary" onclick="openModal('assessment')">Free Assessment</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Hero Section -->
+        <section class="hero-section page-hero">
+            <div class="hero-background"></div>
+            <div class="container">
+                <div class="hero-content" style="text-align: center; max-width: 900px; margin: 0 auto;">
+                    <h1 class="hero-title" style="font-size: 3.5rem; margin-bottom: 1.5rem;">CSRD Knowledge Center</h1>
+                    <p class="hero-subtitle" style="font-size: 1.5rem; opacity: 0.95;">Free resources, guides, and expert insights for mid-market CSRD compliance</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Resources -->
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Featured Resources</h2>
+
+                <div class="diff-grid" style="margin-top: 3rem;">
+                    <!-- Resource 1 -->
+                    <div class="diff-card" style="background: linear-gradient(135deg, var(--color-blue) 0%, #1a2f4a 100%); border: none;">
+                        <div style="margin-bottom: 1rem;">
+                            <span style="display: inline-block; background: var(--color-gold); color: var(--color-blue); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.875rem; font-weight: 700;">FREE GUIDE</span>
+                        </div>
+                        <h3 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem;">
+                            CSRD Compliance Guide for US Mid-Market Companies
+                        </h3>
+                        <p style="margin-bottom: 1.5rem; opacity: 0.95;">
+                            Comprehensive 30-page guide covering CSRD applicability, timeline, requirements, and practical implementation steps specifically for mid-market companies.
+                        </p>
+                        <ul style="margin-bottom: 2rem; opacity: 0.9;">
+                            <li style="margin-bottom: 0.5rem;">✓ Does CSRD apply to your company?</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Key timeline and deadlines</li>
+                            <li style="margin-bottom: 0.5rem;">✓ What data you need to collect</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Budget planning guidance</li>
+                        </ul>
+                        <button class="btn-primary" onclick="openModal('download-guide')">Download Free Guide</button>
+                    </div>
+
+                    <!-- Resource 2 -->
+                    <div class="diff-card" style="background: linear-gradient(135deg, var(--color-teal) 0%, #258a80 100%); border: none;">
+                        <div style="margin-bottom: 1rem;">
+                            <span style="display: inline-block; background: var(--color-gold); color: var(--color-blue); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.875rem; font-weight: 700;">TOOL</span>
+                        </div>
+                        <h3 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem;">
+                            CSRD Applicability Calculator
+                        </h3>
+                        <p style="margin-bottom: 1.5rem; opacity: 0.95;">
+                            Free interactive tool to determine if and when CSRD requirements apply to your company based on EU operations, subsidiaries, and revenue thresholds.
+                        </p>
+                        <ul style="margin-bottom: 2rem; opacity: 0.9;">
+                            <li style="margin-bottom: 0.5rem;">✓ Quick 5-minute assessment</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Clear yes/no determination</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Timeline for compliance</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Next steps guidance</li>
+                        </ul>
+                        <button class="btn-primary" onclick="alert('Calculator coming soon!')">Use Calculator</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Article Library -->
+        <section class="section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Latest Articles & Insights</h2>
+                <p class="section-intro">Expert guidance on CSRD compliance, sustainability reporting, and ESG best practices</p>
+
+                <div class="problem-grid" style="margin-top: 3rem;">
+                    <!-- Article 1 -->
+                    <div class="article-card">
+                        <div style="padding: 2rem;">
+                            <div style="font-size: 0.875rem; font-weight: 600; color: var(--color-teal); margin-bottom: 0.5rem;">COMPLIANCE</div>
+                            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: white;">
+                                Understanding Double Materiality Assessment
+                            </h3>
+                            <p style="margin-bottom: 1.5rem; opacity: 0.9;">
+                                Learn the core CSRD requirement of double materiality—assessing both your company's impact on the world and the world's impact on your business.
+                            </p>
+                            <a href="#" style="color: var(--color-gold); font-weight: 600; text-decoration: none;">Read More →</a>
+                        </div>
+                    </div>
+
+                    <!-- Article 2 -->
+                    <div class="article-card">
+                        <div style="padding: 2rem;">
+                            <div style="font-size: 0.875rem; font-weight: 600; color: var(--color-teal); margin-bottom: 0.5rem;">STRATEGY</div>
+                            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: white;">
+                                Scope 3 Emissions: A Practical Guide
+                            </h3>
+                            <p style="margin-bottom: 1.5rem; opacity: 0.9;">
+                                Master the challenging task of measuring Scope 3 emissions across your value chain with practical methods and real examples.
+                            </p>
+                            <a href="#" style="color: var(--color-gold); font-weight: 600; text-decoration: none;">Read More →</a>
+                        </div>
+                    </div>
+
+                    <!-- Article 3 -->
+                    <div class="article-card">
+                        <div style="padding: 2rem;">
+                            <div style="font-size: 0.875rem; font-weight: 600; color: var(--color-teal); margin-bottom: 0.5rem;">IMPLEMENTATION</div>
+                            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: white;">
+                                Building Your Sustainability Data System
+                            </h3>
+                            <p style="margin-bottom: 1.5rem; opacity: 0.9;">
+                                Step-by-step guidance for establishing data collection systems that will support ongoing CSRD reporting and compliance.
+                            </p>
+                            <a href="#" style="color: var(--color-gold); font-weight: 600; text-decoration: none;">Read More →</a>
+                        </div>
+                    </div>
+
+                    <!-- Article 4 -->
+                    <div class="article-card">
+                        <div style="padding: 2rem;">
+                            <div style="font-size: 0.875rem; font-weight: 600; color: var(--color-teal); margin-bottom: 0.5rem;">BUDGET</div>
+                            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: white;">
+                                CSRD Compliance Budgeting for Mid-Market
+                            </h3>
+                            <p style="margin-bottom: 1.5rem; opacity: 0.9;">
+                                Realistic cost estimates and budget planning guidance for mid-market companies navigating CSRD compliance requirements.
+                            </p>
+                            <a href="#" style="color: var(--color-gold); font-weight: 600; text-decoration: none;">Read More →</a>
+                        </div>
+                    </div>
+
+                    <!-- Article 5 -->
+                    <div class="article-card">
+                        <div style="padding: 2rem;">
+                            <div style="font-size: 0.875rem; font-weight: 600; color: var(--color-teal); margin-bottom: 0.5rem;">REPORTING</div>
+                            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: white;">
+                                ESRS Standards Explained Simply
+                            </h3>
+                            <p style="margin-bottom: 1.5rem; opacity: 0.9;">
+                                Demystifying the European Sustainability Reporting Standards with plain-language explanations and practical examples.
+                            </p>
+                            <a href="#" style="color: var(--color-gold); font-weight: 600; text-decoration: none;">Read More →</a>
+                        </div>
+                    </div>
+
+                    <!-- Article 6 -->
+                    <div class="article-card">
+                        <div style="padding: 2rem;">
+                            <div style="font-size: 0.875rem; font-weight: 600; color: var(--color-teal); margin-bottom: 0.5rem;">TIMELINE</div>
+                            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: white;">
+                                When Does CSRD Apply to Your Company?
+                            </h3>
+                            <p style="margin-bottom: 1.5rem; opacity: 0.9;">
+                                Clear breakdown of CSRD phase-in timeline and how to determine your specific compliance deadline based on company size and structure.
+                            </p>
+                            <a href="#" style="color: var(--color-gold); font-weight: 600; text-decoration: none;">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Webinar Section -->
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Upcoming Webinars</h2>
+
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div class="journey-card">
+                        <div style="padding: 2.5rem;">
+                            <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
+                                <div>
+                                    <span style="display: inline-block; background: var(--color-gold); color: var(--color-blue); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.875rem; font-weight: 700; margin-bottom: 1rem;">FREE WEBINAR</span>
+                                    <h3 style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">CSRD Readiness for Mid-Market Companies</h3>
+                                    <p style="opacity: 0.9; font-size: 1.125rem;">Learn how to assess your current state and build a compliance roadmap</p>
+                                </div>
+                            </div>
+
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+                                <div>
+                                    <div style="font-size: 0.875rem; opacity: 0.8; margin-bottom: 0.25rem;">Date & Time</div>
+                                    <div style="font-weight: 600;">Coming Soon - Sign Up for Updates</div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 0.875rem; opacity: 0.8; margin-bottom: 0.25rem;">Duration</div>
+                                    <div style="font-weight: 600;">60 minutes + Q&A</div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 0.875rem; opacity: 0.8; margin-bottom: 0.25rem;">Format</div>
+                                    <div style="font-weight: 600;">Live Online</div>
+                                </div>
+                            </div>
+
+                            <button class="btn-primary btn-large" onclick="openModal('webinar')">Register for Webinar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section-padding bg-light">
+            <div class="container" style="text-align: center;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem; font-weight: 700;">Need Expert Guidance?</h2>
+                <p style="font-size: 1.25rem; max-width: 700px; margin: 0 auto 2rem; opacity: 0.9;">
+                    Schedule a free 30-minute consultation to discuss your CSRD compliance strategy
+                </p>
+                <button class="btn-primary btn-large" onclick="openModal('assessment')">Get Free Assessment</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">SATVA</h3>
+                        <p style="opacity: 0.8;">शिव संकल्पमस्तु</p>
+                        <p style="font-size: 0.875rem; opacity: 0.8;">May there be noble intentions</p>
+                    </div>
+                    <p style="margin-top: 1rem; opacity: 0.9;">
+                        CSRD compliance expertise for mid-market companies.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 style="font-weight: 700; margin-bottom: 1rem;">Quick Links</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;"><a href="index-enhanced.html">Home</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="services-enhanced.html">Services</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="about-enhanced.html">About</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="resources-enhanced.html">Resources</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="contact-enhanced.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 style="font-weight: 700; margin-bottom: 1rem;">Contact</h4>
+                    <p style="opacity: 0.9; margin-bottom: 0.5rem;">Email: info@satvasustainability.com</p>
+                    <p style="opacity: 0.9; margin-bottom: 0.5rem;">Phone: (555) 123-4567</p>
+                    <p style="opacity: 0.9;">Serving Mid-Market Companies Nationwide</p>
+                </div>
+            </div>
+
+            <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 2rem; margin-top: 3rem; text-align: center; opacity: 0.8;">
+                <p>&copy; 2024 Satva Sustainability Advisory & Consulting Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Assessment Modal -->
+    <div class="modal-overlay" id="assessment-modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('assessment')">&times;</button>
+            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Free CSRD Assessment</h2>
+            <p style="margin-bottom: 2rem; opacity: 0.9;">Schedule your 30-minute consultation</p>
+
+            <form class="modal-form">
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Email *</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Company Name *</label>
+                    <input type="text" required>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">Request Assessment</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Download Guide Modal -->
+    <div class="modal-overlay" id="download-guide-modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('download-guide')">&times;</button>
+            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Download Free Guide</h2>
+            <p style="margin-bottom: 2rem; opacity: 0.9;">Get instant access to our comprehensive CSRD guide</p>
+
+            <form class="modal-form">
+                <div class="form-group">
+                    <label>Email *</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Company Name</label>
+                    <input type="text">
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">Download Guide</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Webinar Modal -->
+    <div class="modal-overlay" id="webinar-modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('webinar')">&times;</button>
+            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Register for Webinar</h2>
+            <p style="margin-bottom: 2rem; opacity: 0.9;">We'll notify you when registration opens</p>
+
+            <form class="modal-form">
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Email *</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Company</label>
+                    <input type="text">
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">Notify Me</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/enhanced-main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Satva | Free CSRD Consultation | Satva Sustainability</title>
+    <meta name="description" content="Schedule a free CSRD readiness consultation with Satva Sustainability. Get expert guidance for your mid-market compliance needs.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Enhanced CSS -->
+    <link rel="stylesheet" href="css/enhanced-styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="main-nav" class="nav-sticky">
+        <div class="container nav-content">
+            <a href="index-enhanced.html" class="logo">
+                <img src="images/satva-logo.png" alt="Satva" class="logo-image">
+                <div class="logo-text-container">
+                    <span class="logo-text">SATVA</span>
+                    <span class="logo-tagline">शिव संकल्पमस्तु</span>
+                </div>
+            </a>
+
+            <div class="nav-links">
+                <a href="index-enhanced.html">Home</a>
+                <a href="services-enhanced.html">Services</a>
+                <a href="about-enhanced.html">About</a>
+                <a href="resources-enhanced.html">Resources</a>
+                <a href="contact-enhanced.html" class="active">Contact</a>
+                <button class="btn-primary" onclick="openModal('assessment')">Free Assessment</button>
+            </div>
+
+            <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="index-enhanced.html">Home</a>
+            <a href="services-enhanced.html">Services</a>
+            <a href="about-enhanced.html">About</a>
+            <a href="resources-enhanced.html">Resources</a>
+            <a href="contact-enhanced.html" class="active">Contact</a>
+            <button class="btn-primary" onclick="openModal('assessment')">Free Assessment</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Hero Section -->
+        <section class="hero-section page-hero">
+            <div class="hero-background"></div>
+            <div class="container">
+                <div class="hero-content" style="text-align: center; max-width: 900px; margin: 0 auto;">
+                    <h1 class="hero-title" style="font-size: 3.5rem; margin-bottom: 1.5rem;">Start Your CSRD Journey</h1>
+                    <p class="hero-subtitle" style="font-size: 1.5rem; opacity: 0.95;">Schedule a free consultation to discuss your specific compliance needs</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form & Info Section -->
+        <section class="section-padding">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 4rem;">
+
+                    <!-- Contact Form -->
+                    <div>
+                        <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem;">Request Free Consultation</h2>
+                        <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.9;">
+                            Fill out the form below and we'll get back to you within 1 business day to schedule your free CSRD readiness assessment.
+                        </p>
+
+                        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="modal-form">
+                            <!-- Hidden fields for Netlify -->
+                            <input type="hidden" name="form-name" value="contact">
+
+                            <!-- Honeypot field -->
+                            <div style="display: none;">
+                                <label>Don't fill this out: <input name="bot-field"></label>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="name">Full Name <span style="color: #ef4444;">*</span></label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company">Company Name <span style="color: #ef4444;">*</span></label>
+                                <input type="text" id="company" name="company" required placeholder="Acme Manufacturing Inc.">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="title">Title/Role <span style="color: #ef4444;">*</span></label>
+                                <input type="text" id="title" name="title" required placeholder="CFO, Sustainability Director, etc.">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address <span style="color: #ef4444;">*</span></label>
+                                <input type="email" id="email" name="email" required placeholder="john@acme.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="revenue">Annual Revenue Range</label>
+                                <select id="revenue" name="revenue" style="width: 100%; padding: 0.75rem; background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(10px); border: 2px solid rgba(255, 255, 255, 0.3); border-radius: 4px; color: white; font-family: var(--font-body); font-size: 1rem;">
+                                    <option value="">Select range</option>
+                                    <option value="10-50M">$10M - $50M</option>
+                                    <option value="50-100M">$50M - $100M</option>
+                                    <option value="100-250M">$100M - $250M</option>
+                                    <option value="250-500M">$250M - $500M</option>
+                                    <option value="500M+">$500M+</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="eu-operations">Do you have EU operations or customers?</label>
+                                <select id="eu-operations" name="eu-operations" style="width: 100%; padding: 0.75rem; background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(10px); border: 2px solid rgba(255, 255, 255, 0.3); border-radius: 4px; color: white; font-family: var(--font-body); font-size: 1rem;">
+                                    <option value="">Select option</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                    <option value="unsure">Unsure</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="timeline">When do you need to be CSRD compliant?</label>
+                                <select id="timeline" name="timeline" style="width: 100%; padding: 0.75rem; background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(10px); border: 2px solid rgba(255, 255, 255, 0.3); border-radius: 4px; color: white; font-family: var(--font-body); font-size: 1rem;">
+                                    <option value="">Select timeline</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="unsure">Not sure</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">How can we help you? <span style="color: #ef4444;">*</span></label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell us about your CSRD compliance needs, questions, or concerns..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-primary btn-large" style="width: 100%;">Submit Request</button>
+
+                            <p style="font-size: 0.875rem; margin-top: 1rem; opacity: 0.8;">
+                                By submitting this form, you agree to receive emails from Satva Sustainability regarding your inquiry. We respect your privacy and will never share your information.
+                            </p>
+                        </form>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div>
+                        <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem;">Get In Touch</h2>
+
+                        <div class="problem-card" style="margin-bottom: 2rem;">
+                            <div style="display: flex; align-items: start; gap: 1.5rem;">
+                                <div style="flex-shrink: 0;">
+                                    <svg width="40" height="40" fill="none" stroke="var(--color-gold)" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Email Us</h3>
+                                    <p style="opacity: 0.9; margin-bottom: 0.5rem;">info@satvasustainability.com</p>
+                                    <p style="font-size: 0.875rem; opacity: 0.8;">We respond within 1 business day</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="problem-card" style="margin-bottom: 2rem;">
+                            <div style="display: flex; align-items: start; gap: 1.5rem;">
+                                <div style="flex-shrink: 0;">
+                                    <svg width="40" height="40" fill="none" stroke="var(--color-gold)" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Call Us</h3>
+                                    <p style="opacity: 0.9; margin-bottom: 0.5rem;">(555) 123-4567</p>
+                                    <p style="font-size: 0.875rem; opacity: 0.8;">Monday - Friday, 9am - 5pm EST</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="problem-card" style="margin-bottom: 2rem;">
+                            <div style="display: flex; align-items: start; gap: 1.5rem;">
+                                <div style="flex-shrink: 0;">
+                                    <svg width="40" height="40" fill="none" stroke="var(--color-gold)" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Location</h3>
+                                    <p style="opacity: 0.9; margin-bottom: 0.5rem;">Serving Companies Nationwide</p>
+                                    <p style="font-size: 0.875rem; opacity: 0.8;">Remote consultations available</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="background: rgba(212, 167, 74, 0.15); border-left: 4px solid var(--color-gold); padding: 1.5rem; border-radius: 8px; margin-top: 3rem;">
+                            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; color: var(--color-gold);">What to Expect</h3>
+                            <ul style="line-height: 2; opacity: 0.9;">
+                                <li style="margin-bottom: 0.5rem;">✓ 30-minute free consultation</li>
+                                <li style="margin-bottom: 0.5rem;">✓ CSRD applicability assessment</li>
+                                <li style="margin-bottom: 0.5rem;">✓ Timeline and budget guidance</li>
+                                <li style="margin-bottom: 0.5rem;">✓ Custom implementation roadmap</li>
+                                <li style="margin-bottom: 0.5rem;">✓ No obligation, no pressure</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-intro">Common questions about working with Satva</p>
+
+                <div style="max-width: 900px; margin: 3rem auto 0;">
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h4>How long does it take to get started?</h4>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>We can typically schedule your free consultation within 2-3 business days. After our initial conversation, we'll provide a detailed proposal within one week. Most clients begin their engagement within 2-4 weeks of first contact.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h4>What information should I prepare for the consultation?</h4>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Helpful to have: your company's annual revenue, number of employees, EU operations/customers details, and any existing sustainability reporting. However, don't let lack of information prevent you from reaching out—we can help you gather what's needed.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h4>Do you work with companies outside the US?</h4>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Yes! While we're based in the US and specialize in helping US mid-market companies, we work with clients globally. Our expertise in CSRD compliance is valuable regardless of your headquarters location.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h4>What's included in the free consultation?</h4>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Your 30-minute consultation includes: CSRD applicability assessment for your company, timeline discussion, high-level budget guidance, identification of key challenges, and next steps recommendation. No sales pressure—just honest guidance.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h4>How do your fees compare to Big Four firms?</h4>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Our fees typically range from $40K-$150K for comprehensive CSRD compliance support, compared to $500K-$1.5M+ at Big Four firms. We provide the same level of expertise at mid-market pricing, making compliance accessible without sacrificing quality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section-padding">
+            <div class="container" style="text-align: center;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem; font-weight: 700;">Ready to Get Started?</h2>
+                <p style="font-size: 1.25rem; max-width: 700px; margin: 0 auto 2rem; opacity: 0.9;">
+                    Take the first step toward CSRD compliance with a free consultation
+                </p>
+                <a href="#" onclick="document.getElementById('name').scrollIntoView({behavior: 'smooth'}); document.getElementById('name').focus(); return false;" class="btn-primary btn-large">Fill Out Form Above</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">SATVA</h3>
+                        <p style="opacity: 0.8;">शिव संकल्पमस्तु</p>
+                        <p style="font-size: 0.875rem; opacity: 0.8;">May there be noble intentions</p>
+                    </div>
+                    <p style="margin-top: 1rem; opacity: 0.9;">
+                        CSRD compliance expertise for mid-market companies.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 style="font-weight: 700; margin-bottom: 1rem;">Quick Links</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;"><a href="index-enhanced.html">Home</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="services-enhanced.html">Services</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="about-enhanced.html">About</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="resources-enhanced.html">Resources</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="contact-enhanced.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 style="font-weight: 700; margin-bottom: 1rem;">Contact</h4>
+                    <p style="opacity: 0.9; margin-bottom: 0.5rem;">Email: info@satvasustainability.com</p>
+                    <p style="opacity: 0.9; margin-bottom: 0.5rem;">Phone: (555) 123-4567</p>
+                    <p style="opacity: 0.9;">Serving Mid-Market Companies Nationwide</p>
+                </div>
+            </div>
+
+            <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 2rem; margin-top: 3rem; text-align: center; opacity: 0.8;">
+                <p>&copy; 2024 Satva Sustainability Advisory & Consulting Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Assessment Modal -->
+    <div class="modal-overlay" id="assessment-modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('assessment')">&times;</button>
+            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Free CSRD Assessment</h2>
+            <p style="margin-bottom: 2rem; opacity: 0.9;">Schedule your 30-minute consultation</p>
+
+            <form class="modal-form">
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Email *</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Company Name *</label>
+                    <input type="text" required>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">Request Assessment</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/enhanced-main.js"></script>
+
+</body>
+</html>
